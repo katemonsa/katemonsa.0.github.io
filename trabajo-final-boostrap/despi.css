@@ -1,0 +1,66 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color:  #76d7c4 ;
+}
+header{
+    background: #27ae60;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    height: 90px;
+    margin: 10px 15px 5px 20px;
+    text-align: right;
+    padding: 10px;
+    border-bottom-style:solid ;/* coloca borde inferior a la cabecera*/
+    border-bottom-color:#145a32  ;/*color del borde inferior*/
+    border-block-end-width: 7px;/*tamaño del borde*/
+}
+
+ul{
+    list-style: none;/*para quitar los estilos de los puntos a las listas*/
+}
+.ni li a{
+ background-color: #7dcea0 ;
+ color: aliceblue;
+ text-decoration: none;
+ padding: 10px 15px;
+ display: block;
+ text-align: center;
+}
+.ni li a:hover{
+    background-color: #abebc6;
+}
+.ni>li{
+    float: right;
+}
+.ni li ul{
+    display: none;/*desaparece los submenus*/
+    position: absolute;/*posicion de acuerdo a la anterior*/
+    min-width: 90px;/*mueve a la derecha los menus*/
+}
+.ni li:hover>ul{
+    display: block;
+
+}
+/*ajustar los submenus de los submenus*/
+.ni li ul li{
+    position: relative;
+}
+.ni li ul li ul{
+    right: 100px;
+    top: 0px;
+
+}
+.wh{
+    height: 40 px;
+     width: 40px;
+     box-shadow: 0px 0px 0px ;
+     position: fixed;
+     right: 15px;
+     top: 85%;
+    
+     
+ }

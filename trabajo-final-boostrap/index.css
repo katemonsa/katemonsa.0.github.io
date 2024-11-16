@@ -1,0 +1,183 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color:  #76d7c4 ;
+}
+header{
+    background: #27ae60;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    height: 90px;
+    margin: 10px 15px 5px 20px;
+    text-align: right;
+    padding: 10px;
+    border-bottom-style:solid ;/* coloca borde inferior a la cabecera*/
+    border-bottom-color:#145a32  ;/*color del borde inferior*/
+    border-block-end-width: 7px;/*tamaño del borde*/
+}
+
+ul{
+    list-style: none;/*para quitar los estilos de los puntos a las listas*/
+}
+.ni li a{
+ background-color: #7dcea0 ;
+ color: aliceblue;
+ text-decoration: none;
+ padding: 10px 15px;
+ display: block;
+ text-align: center;
+}
+.ni li a:hover{
+    background-color: #abebc6;
+}
+.ni>li{
+    float: right;
+}
+.ni li ul{
+    display: none;/*desaparece los submenus*/
+    position: absolute;/*posicion de acuerdo a la anterior*/
+    min-width: 90px;/*mueve a la derecha los menus*/
+}
+.ni li:hover>ul{
+    display: block;
+
+}
+/*ajustar los submenus de los submenus*/
+.ni li ul li{
+    position: relative;
+}
+.ni li ul li ul{
+    right: 100px;
+    top: 0px;
+
+}
+
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #1e8449;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+
+  .contenedor{
+    text-align: center;
+    text-transform: uppercase;/*mantiene el texto en mayuscula*/
+    margin: 150px 0;
+    display: inline-block;
+    position: relative;
+
+}
+h1::before{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color:#1e8449;
+    position: absolute;
+    top:-8;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.8s all;/*transicion con respecto al before*/
+}
+
+h1::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color:#1e8449;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.8s all;/*transicion con respecto al before*/
+}
+
+h1:hover::after{
+    width: 0;
+}
+
+h1:hover::before{
+    width: 100%;
+}
+
+.tex{
+    color: #1e8449;
+    font-size: 90px;
+}
+
+.wh{
+    height: 40 px;
+     width: 40px;
+     box-shadow: 0px 0px 0px ;
+     position: fixed;
+     right: 15px;
+     top: 85%;
+    
+     
+ }
